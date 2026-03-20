@@ -2,6 +2,10 @@ body {
     text-align: center;
     font-family: Arial;
     background: url('../AFBEELDING/coffebackround.jpg') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .apps {

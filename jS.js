@@ -19,22 +19,18 @@ const addBtn = document.querySelector("#addCof");
 // =====================
 let coffees = [
     { name: "Espresso", price: "3$", img: "https://www.sharmispassions.com/wp-content/uploads/2012/07/espresso-coffee-recipe022.jpg" },
-    { name: "Latte", price: "4$", img: "https://via.placeholder.com/150" },
+    { name: "Latte", price: "4$", img: "https://img.freepik.com/free-photo/latte-coffee_74190-7821.jpg?semt=ais_hybrid&w=740&q=80" },
     { name: "Cappuccino", price: "5$", img: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-07-Cappuccino%2FCappuccino" },
-    { name: "Americano", price: "3.5$", img: "https://via.placeholder.com/150" }
-        { name: "Espresso", price: "3$", img: "https://www.sharmispassions.com/wp-content/uploads/2012/07/espresso-coffee-recipe022.jpg" },
-    { name: "Latte", price: "4$", img: "https://via.placeholder.com/150" },
-    { name: "Cappuccino", price: "5$", img: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-07-Cappuccino%2FCappuccino" },
-    { name: "Americano", price: "3.5$", img: "https://via.placeholder.com/150" }
-    
+    { name: "Americano", price: "3.5$", img: "https://majestycoffee.com/cdn/shop/articles/americano_b74a8154-454b-4f74-9a6c-95fbc4152ed3_600x600_crop_center.jpg?v=1684048195" }
 
 
-    // const product = [
+    // const products = [
 //     { name: "lungo", price: "$1", img: "https://img.freepik.com/free-photo/latte-coffee-cup_74190-1195.jpg" },
 //     { name: "Doppio", price: "$2", img: "https://via.placeholder.com/50" },
 //     { name: "Latte", price: "$3", img: "https://via.placeholder.com/50" },
 //     { name: "Mocha", price: "$4", img: "https://via.placeholder.com/50" }
 //   ];
+    
 ];
 
 // =====================
@@ -114,11 +110,10 @@ searchInput.addEventListener("input", function () { // event 2
 
             showCoffees(filtered);
 });
-
 // =====================
 // اضافه کردن قهوه جدید
 // =====================
-addBtn.addEventListener("click", function () { // event 3
+addCof.addEventListener("click", function () { // event 3
 
             const name = nameInput.value;
             const price = priceInput.value;
@@ -140,7 +135,7 @@ addBtn.addEventListener("click", function () { // event 3
                                 priceInput.value = "";
                                 imgInput.value = "";
                             }
-                                        if (name.value && price.value && img.value === "") {
+                                        if (name.value=== "" && price.value=== "" && img.value === "") {
                                             alert("vull iets");
                                         }
 });
