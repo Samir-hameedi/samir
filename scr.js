@@ -19,13 +19,18 @@ const addBtn = document.querySelector("#addCof");
 // =====================
 let coffees = [
     { name: "Espresso", price: "3$", img: "https://www.sharmispassions.com/wp-content/uploads/2012/07/espresso-coffee-recipe022.jpg" },
-    { name: "Latte", price: "4$", img: "https://via.placeholder.com/150" },
+    { name: "Latte", price: "4$", img: "https://media.istockphoto.com/id/1152767411/photo/cup-of-coffee-latte-isolated-on-white-background-with-clipping-path.jpg?s=612x612&w=0&k=20&c=24HBAvkahjo8LKV-6DRUklQzPJUqxjmVlBFtV5BG4tU=" },
     { name: "Cappuccino", price: "5$", img: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-07-Cappuccino%2FCappuccino" },
-    { name: "Americano", price: "3.5$", img: "https://via.placeholder.com/150" }
-        { name: "Espresso", price: "3$", img: "https://www.sharmispassions.com/wp-content/uploads/2012/07/espresso-coffee-recipe022.jpg" },
-    { name: "Latte", price: "4$", img: "https://via.placeholder.com/150" },
+    { name: "Americano", price: "3.5$", img: "https://www.shutterstock.com/image-photo/hot-americano-coffee-rich-aroma-600nw-2706827099.jpg" },
+    { name: "Latte", price: "4$", img: "https://media.istockphoto.com/id/1152767411/photo/cup-of-coffee-latte-isolated-on-white-background-with-clipping-path.jpg?s=612x612&w=0&k=20&c=24HBAvkahjo8LKV-6DRUklQzPJUqxjmVlBFtV5BG4tU=" },
     { name: "Cappuccino", price: "5$", img: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-07-Cappuccino%2FCappuccino" },
-    { name: "Americano", price: "3.5$", img: "https://via.placeholder.com/150" }
+    { name: "Americano", price: "3.5$", img: "https://www.shutterstock.com/image-photo/hot-americano-coffee-rich-aroma-600nw-2706827099.jpg" },
+    { name: "Latte", price: "4$", img: "https://media.istockphoto.com/id/1152767411/photo/cup-of-coffee-latte-isolated-on-white-background-with-clipping-path.jpg?s=612x612&w=0&k=20&c=24HBAvkahjo8LKV-6DRUklQzPJUqxjmVlBFtV5BG4tU=" },
+    { name: "Cappuccino", price: "5$", img: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-07-Cappuccino%2FCappuccino" },
+    { name: "Americano", price: "3.5$", img: "https://www.shutterstock.com/image-photo/hot-americano-coffee-rich-aroma-600nw-2706827099.jpg" },
+    { name: "Latte", price: "4$", img: "https://media.istockphoto.com/id/1152767411/photo/cup-of-coffee-latte-isolated-on-white-background-with-clipping-path.jpg?s=612x612&w=0&k=20&c=24HBAvkahjo8LKV-6DRUklQzPJUqxjmVlBFtV5BG4tU=" },
+    { name: "Cappuccino", price: "5$", img: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-07-Cappuccino%2FCappuccino" },
+]    
     
 
 
@@ -35,7 +40,7 @@ let coffees = [
 //     { name: "Latte", price: "$3", img: "https://via.placeholder.com/50" },
 //     { name: "Mocha", price: "$4", img: "https://via.placeholder.com/50" }
 //   ];
-];
+// ];
 
 // =====================
 // ساخت container با JS
@@ -68,11 +73,12 @@ function showCoffees(list) {
                 img.src = coffee.img;
 
                 const btn = document.createElement("button");
-                btn.textContent = "Delete";
+                btn.textContent = "BUY";
 
                 // event 1
                 btn.addEventListener("click", function () {
-                    card.remove();
+                    // card.remove();
+                     alert("سفارش شما انجام شد ✅");
                 });
 
                 card.appendChild(img);

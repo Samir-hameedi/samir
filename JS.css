@@ -1,14 +1,24 @@
 body {
     text-align: center;
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
+    padding: 3rem;
+    
     /* background: url('../AFBEELDING/coffebackround.jpg') center/cover; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     background-color: burlywood;
+    /* padding: 3rem 3rem; */
+    /* margin: 0auto; */
 }
-
+h1
+{
+    padding: 17PX;
+    border: 5px solid;
+    border-radius: 50%;
+}
 .apps {
     display: flex;
     flex-wrap: wrap;
@@ -23,7 +33,7 @@ body {
     border-radius: 25px;
 }
 
-.card :hover
+.card:hover
 {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.5)
@@ -37,7 +47,12 @@ body {
 }
 
 footer {
+
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
 }
 
 button
