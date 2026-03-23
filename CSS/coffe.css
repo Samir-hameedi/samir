@@ -2,6 +2,43 @@ body {
     margin: 0;
     padding: 0;
 }
+/* .toUp
+{
+    margin: 50% 0% 50% 100%;
+    position: fixed;
+} */
+
+.my-scroll-top-btn {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 1;
+  position: fixed;
+  right: 0px;
+  top: 50%;
+  background:#8d6247;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
 
 header {
     /* height: 50%; */
@@ -14,6 +51,9 @@ header {
     padding-top: 36px;
     background: url('../AFBEELDING/coffebackround.jpg') center/cover;
 }
+
+
+
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -147,7 +187,7 @@ ul a:hover {
     padding: 0px 60px;
     background: linear-gradient(to bottom, #eae3d2 0%, #f3f4ee 15%, white 0%);
     height: 40rem;
-    gap: 125px;
+    gap: 100px;
     /* 
      display: flex;
     align-items: center;
@@ -183,7 +223,7 @@ ul a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: -7rem;
 
 }
 

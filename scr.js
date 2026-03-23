@@ -78,7 +78,21 @@ function showCoffees(list) {
                 // event 1
                 btn.addEventListener("click", function () {
                     // card.remove();
-                     alert("سفارش شما انجام شد ✅");
+                    //  alert("سفارش شما انجام شد ✅");
+                     Swal.fire({
+                    icon: 'success',
+                    title: 'Order Placed!',
+                    text: 'Your order has been placed successfully.',
+                    confirmButtonText: 'OK',
+                    background: 'burlywood',
+                    iconColor: '#ffffff',
+                    showClass: {
+                        popup: 'animate_animated animate_fadeInDown'
+                    },
+                    hideClass: {
+                        popup: 'animate_animated animate_fadeOutUp'
+                    }// ai + site animition swal fire
+    });
                 });
 
                 card.appendChild(img);
