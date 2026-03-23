@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /* .toUp
 {
     margin: 50% 0% 50% 100%;
@@ -9,31 +10,29 @@ body {
 } */
 
 .my-scroll-top-btn {
-  position: fixed;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  text-align: center;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 50%;
-  font-size: 20px;
-  font-weight: bold;
-  z-index: 1;
-  position: fixed;
-  right: 0px;
-  top: 50%;
-  background:#8d6247;
-  color: white;
-  border-radius: 50%;
-  cursor: pointer;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 1;
+    right: 0px;
+    top: 80%;
+    background: #8d6247;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
@@ -184,9 +183,9 @@ ul a:hover {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 0px 60px;
-    background: linear-gradient(to bottom, #eae3d2 0%, #f3f4ee 15%, white 0%);
-    height: 40rem;
+    padding: 140px 60px;
+    background: linear-gradient(to bottom, #eae3d2 0%, #f3f4ee 7%, white 0%);
+    /* height: 40rem; */
     gap: 100px;
     /* 
      display: flex;
@@ -229,9 +228,11 @@ ul a:hover {
 
 .ICT {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     /* justify-content: space-between; */
     flex-direction: row;
+    flex-wrap: wrap;
+
     /* max-width: 100%; */
     gap: 3rem;
 }
@@ -390,12 +391,12 @@ ul a:hover {
 
 
 footer {
-    min-height: 16.6rem;
-    /* background-color: aqua; */
-    max-height: 16.6rem;
+    padding: 8% 0%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     gap: 2rem;
     background: linear-gradient(to top, #eae3d2 0%, #f3f4ee 50%, white 20%);
 

@@ -48,6 +48,7 @@ let coffees = [
 const container = document.createElement("div");
 container.style.display = "flex";
 container.style.flexWrap = "wrap";
+container.style.justifyContent = "center";
 
 app.appendChild(container);
 
