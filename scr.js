@@ -30,11 +30,11 @@ let coffees = [
     { name: "Americano", price: "3.5$", img: "https://www.shutterstock.com/image-photo/hot-americano-coffee-rich-aroma-600nw-2706827099.jpg" },
     { name: "Latte", price: "4$", img: "https://media.istockphoto.com/id/1152767411/photo/cup-of-coffee-latte-isolated-on-white-background-with-clipping-path.jpg?s=612x612&w=0&k=20&c=24HBAvkahjo8LKV-6DRUklQzPJUqxjmVlBFtV5BG4tU=" },
     { name: "Cappuccino", price: "5$", img: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-07-Cappuccino%2FCappuccino" },
-]    
-    
+]
 
 
-    // const product = [
+
+// const product = [
 //     { name: "lungo", price: "$1", img: "https://img.freepik.com/free-photo/latte-coffee-cup_74190-1195.jpg" },
 //     { name: "Doppio", price: "$2", img: "https://via.placeholder.com/50" },
 //     { name: "Latte", price: "$3", img: "https://via.placeholder.com/50" },
@@ -57,82 +57,82 @@ app.appendChild(container);
 function showCoffees(list) {
     container.innerHTML = "";
 
-            for (let i = 0; i < list.length; i++) {
-                const coffee = list[i];
+    for (let i = 0; i < list.length; i++) {
+        const coffee = list[i];
 
-                const card = document.createElement("div");
-                card.classList.add("card");
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-                const title = document.createElement("h3");
-                title.textContent = coffee.name;
+        const title = document.createElement("h3");
+        title.textContent = coffee.name;
 
-                const price = document.createElement("p");
-                price.textContent = coffee.price;
+        const price = document.createElement("p");
+        price.textContent = coffee.price;
 
-                const img = document.createElement("img");
-                img.src = coffee.img;
+        const img = document.createElement("img");
+        img.src = coffee.img;
 
-                const btn = document.createElement("button");
-                btn.textContent = "BUY";
+        const btn = document.createElement("button");
+        btn.textContent = "BUY";
 
-                // event 1
-                btn.addEventListener("click", function () {
-                    // card.remove();
-                    //  alert("سفارش شما انجام شد ✅");
-                     Swal.fire({
-                    icon: 'success',
-                    title: 'Order Placed!',
-                    text: 'Your order has been placed successfully.',
-                    confirmButtonText: 'OK',
-                    background: 'burlywood',
-                    iconColor: '#ffffff',
-                    showClass: {
-                        popup: 'animate_animated animate_fadeInDown'
-                    },
-                    hideClass: {
-                        popup: 'animate_animated animate_fadeOutUp'
-                    }// ai + site animition swal fire
-    });
-                });
+        // event 1
+        btn.addEventListener("click", function () {
+            // card.remove();
+            //  alert("سفارش شما انجام شد ✅");
+            Swal.fire({
+                icon: 'success',
+                title: 'Order Placed!',
+                text: 'Your order has been placed successfully.',
+                confirmButtonText: 'OK',
+                background: 'burlywood',
+                iconColor: '#ffffff',
+                showClass: {
+                    popup: 'animate_animated animate_fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate_animated animate_fadeOutUp'
+                }// ai + site animition swal fire
+            });
+        });
 
-                card.appendChild(img);
-                card.appendChild(title);
-                card.appendChild(price);
-                card.appendChild(btn);
+        card.appendChild(img);
+        card.appendChild(title);
+        card.appendChild(price);
+        card.appendChild(btn);
 
-                container.appendChild(card);
+        container.appendChild(card);
 
-                // for (let i = 0; i < products.length; i++) {
-//   const product = products[i];
+        // for (let i = 0; i < products.length; i++) {
+        //   const product = products[i];
 
-//   const div = document.createElement("div");
-//   div.classList.add("box");
+        //   const div = document.createElement("div");
+        //   div.classList.add("box");
 
-//   div.innerHTML = `
-//     <img src="${product.img}" />
-//     <div>${product.name}</div>
-//     <div>${product.price}</div>
-//   `;
+        //   div.innerHTML = `
+        //     <img src="${product.img}" />
+        //     <div>${product.name}</div>
+        //     <div>${product.price}</div>
+        //   `;
 
-//   container.appendChild(div);
-            }
+        //   container.appendChild(div);
+    }
 }
 
 // =====================
 // جستجو (input.value)
 // =====================
 searchInput.addEventListener("input", function () { // event 2
-            const value = searchInput.value.toLowerCase();
+    const value = searchInput.value.toLowerCase();
 
-            const filtered = [];
+    const filtered = [];
 
-            for (let i = 0; i < coffees.length; i++) {
-                if (coffees[i].name.toLowerCase().includes(value)) {  // met hulp van ai deze lijn
-                    filtered.push(coffees[i]);
-                }
-            }
+    for (let i = 0; i < coffees.length; i++) {
+        if (coffees[i].name.toLowerCase().includes(value)) {
+            filtered.push(coffees[i]);
+        }
+    }
 
-            showCoffees(filtered);
+    showCoffees(filtered);
 });
 
 // =====================
@@ -140,29 +140,29 @@ searchInput.addEventListener("input", function () { // event 2
 // =====================
 addBtn.addEventListener("click", function () { // event 3
 
-            const name = nameInput.value;
-            const price = priceInput.value;
-            const img = imgInput.value;
+    const name = nameInput.value;
+    const price = priceInput.value;
+    const img = imgInput.value;
 
-                            if (name && price && img) {
-                                const newCoffee = {
-                                    name: name,
-                                    price: price,
-                                    img: img
-                                };
+    if (name && price && img) {
+        const newCoffee = {
+            name: name,
+            price: price,
+            img: img
+        };
 
-                                coffees.push(newCoffee);
+        coffees.push(newCoffee);
 
-                                showCoffees(coffees);
+        showCoffees(coffees);
 
-                                // پاک کردن input ها
-                                nameInput.value = "";
-                                priceInput.value = "";
-                                imgInput.value = "";
-                            }
-                                        if (name.value && price.value && img.value === "") {
-                                            alert("vull iets");
-                                        }
+        // پاک کردن input ها
+        nameInput.value = "";
+        priceInput.value = "";
+        imgInput.value = "";
+    }
+    if (!name.value || !price.value || !img.value) {
+        alert("You Have To Write Something!!!");
+    }
 });
 
 // =====================
