@@ -79,7 +79,7 @@ function showCoffees(list) {
         // event 1
         btn.addEventListener("click", function () {
             // card.remove();
-            //  alert("سفارش شما انجام شد ✅");
+            // 
             Swal.fire({
                 icon: 'success',
                 title: 'Order Placed!',
